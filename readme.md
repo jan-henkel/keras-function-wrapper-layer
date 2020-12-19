@@ -21,3 +21,4 @@ class ResnetBlockRelu6(FunctionWrapperLayer):
             lambda x: resnet_block_relu6(x, kernel_size, intermediate_channels)
         )
 ```
+The above example works with Tensorflow 2.4. In Tensorflow 2.3 one has to use keras activation layers for the wrapper to work.
